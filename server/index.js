@@ -39,7 +39,7 @@ app.get("/books", (req, res) => {
 });
 
 app.post("/books", (req, res) => {
-  const q = "INSERT INTO books (`title`, `desc`, `cover`) VALUES (?)";
+  const q = "INSERT INTO books (`title`, `desc`, `price`, `cover`) VALUES (?)";
   const values = [
     // "title from server side",
     // "desc from server side",
@@ -48,6 +48,7 @@ app.post("/books", (req, res) => {
     // add data from client side
     req.body.title,
     req.body.desc,
+    req.body.price,
     req.body.cover,
   ];
 
