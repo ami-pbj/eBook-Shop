@@ -1,5 +1,6 @@
 import express from "express";
 import mysql from "mysql";
+import cors from "cors";
 
 // const express = require("express");
 const app = express();
@@ -18,6 +19,10 @@ const db = mysql.createConnection({
 // ALTER USER 'root'@'localhost' IDENTIFIED BY 'Pbj@123';
 
 app.use(express.json());
+
+// to connect with client side
+app.use(cors());
+
 
 // connected to server => port number 8800
 app.get("/", (req, res) => {
