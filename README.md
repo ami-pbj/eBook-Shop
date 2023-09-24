@@ -6,5 +6,5 @@
 ### `Update database data`
 ### `Delete database data`
 
-### in MySQL database and React.js
+### used MySQL database and React.js
 
