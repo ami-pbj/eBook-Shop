@@ -59,7 +59,7 @@ const Add = () => {
         name="cover"
       />
 
-      <button onClick={handleClick}>
+      <button className="formButton" onClick={handleClick}>
         Add Book
       </button>
     </div>
